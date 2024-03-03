@@ -1,0 +1,41 @@
+.text{
+    text-decoration-line: underline  ;
+    text-decoration-color:  red;
+    text-decoration-style: wavy ;
+    text-decoration-thickness: 2px ;
+    line-height: 20px;
+    letter-spacing: 4px;
+    word-spacing: 3px;
+    font-size: larger;
+}
+.dashed{
+    font-size: 45px;
+    text-decoration-line: underline  ;
+    text-decoration-color:  rgb(101, 6, 74);
+    text-decoration-style: dashed ;
+    text-decoration-thickness: 2px ;
+    line-height: 20px;
+    word-spacing: 3px;
+    text-shadow: 1px 1px 10px red ;
+}
+.dot{
+    color: lightcoral;
+    text-transform: capitalize;
+    font-size: 60px;
+    text-decoration-line: underline  ;
+    text-decoration-color:  royalblue;
+    text-decoration-style: dotted ;
+    text-decoration-thickness: 2px ;
+    line-height: 50px;
+    word-spacing: 3px;
+}
+.back{
+    background-image: url('DirtOVB.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-emphasis: ;
+}
+.te{
+    padding: 20px;
+    text-orientation: sideways-right;
+}

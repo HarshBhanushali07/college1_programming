@@ -1,0 +1,20 @@
+#head{
+    font-size: 60px;
+    color: aquamarine;
+    background-color: rgb(255, 255, 255);
+    text-shadow: 10px 1px 10px rgb(78, 183, 183);
+}
+#hb{
+    font-size: 55px;
+    color: red;
+    background-color: beige;
+    text-shadow: 10px 5px 5px blue;
+}
+#hp{
+    color: blue;
+    font-size: 45px;
+}
+#nc{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Employee Registration</title>
+        <style>
+            @keyframes
+            example{
+                background-attachment: autoplay;
+                0%   {background-color: red;}
+                25%  {background-color: yellow;}
+                50%  {background-color: blue;}
+                100% {background-color: lightcoral;}
+            }
+            body{
+                animation:example ;
+                animation-duration: 26s;
+            }
+            .sub{
+                animation: example; 
+            }
+        </style>
+    </head>
+    <body style="background-color: lightblue;">
+        <h1 align="Center">Employee Registration</h1>
+        <table cellpadding="20" align="center">
+            <tr>
+                <td align="center" colspan="10">
+                    <h3  style="color: darkgoldenrod;font: optional;font-size: 45px;margin: 20px;text-shadow: 15px 5px 15px rgb(7, 255, 53);">Personal Information</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>Employee Id:</td>
+                <td >
+                    <input type="text" placeholder="Enter Employee Id" style="background-color: aqua;">
+                </td>
+                <td>Employee Name:</td>
+                <td>
+                    <input type="text" placeholder="Enter Employee Name" style="background-color: aqua;">
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email" placeholder="Enter Your Email" style="background-color: rgb(72, 185, 185);">
+                </td>
+                <td>
+                    Contact No.
+                </td>
+                <td>
+                    <input type="tel" placeholder="Enter Contact No" style="background-color: aqua;">
+                </td>
+            </tr>
+            <tr>
+                <td>Marital Status:</td>
+                <td style="background-color: lightskyblue;">
+                    <input type="radio" name="Marital">Single
+                    <input type="radio" name="Marital">Married
+                    <input type="radio" name="Marital">Divorced
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="10"> <h3>Education Qualification</h3></td>
+            </tr>
+            <tr>
+                <td>Education:</td>
+                <td>
+                    <input type="text" placeholder="Enter Education details" style="background-color: lightseagreen;">
+                </td>
+                <td>Experience</td>
+                <td>
+                    <input type="text" placeholder="Enter Experience details" style="background-color: lightseagreen">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="4"><h3>Job Details </h3></td>
+            </tr>
+            <tr>
+                <td>Designation:</td>
+                <td>
+                    <input type="text" placeholder="Enter Designation details" style="background-color: bisque;">
+                </td>
+                <td>
+                    Job location:
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter Job details:" style="background-color: bisque;">
+                </td>
+            </tr>
+            <tr>
+                <td>Salary:</td>
+                <td>
+                    <input type="text" placeholder="Enter salary details" style="background-color: bisque;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"><hr></td>
+            </tr>
+            <tr align="center">
+                <td colspan="4" id="sub">
+                    <input type="button" value="Register" >
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

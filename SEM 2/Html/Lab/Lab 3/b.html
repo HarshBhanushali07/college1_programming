@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .title{
+        border: 1px solid grey;
+        background-color: rgba(0, 0, 0, 0.766);
+        color: white;
+        padding: 25px;
+        width: 700px;
+        margin-left:35% ;
+    }
+    .cen{
+        color: gray;
+        padding: 1px;
+        margin-left:50% ;
+        margin-top: 5px;
+        width: 400px;
+        font-size: large;
+    }
+    div.cenbox{
+        margin-left:35% ;
+        margin-top: -8.7%;
+        height: 150px;
+        width: 200px;
+        padding-left: 5px;
+        padding-bottom: 4px;
+    }
+    div.head2{
+    margin-left:50% ;
+    color: lightslategrey;
+    }
+    .linki{
+        color: red;
+    }
+    .list{
+        margin-left:50% ;
+    }
+    .quote{
+        margin-left: 50%;
+        margin-top: 20px;
+        border: 1px solid lightgray;
+        background-color: rgba(211, 211, 211, 0.522);
+        height: 100px;
+        width: 500px;
+        padding: 5px;
+        border-left: none;
+        border-right: none;
+    }
+    .link1{
+        margin-left: 42%;
+        word-spacing: 5px;
+    }
+
+    /* Media Queries */
+    @media only screen and (max-width: 600px) {
+        /* Styles for mobile devices */
+        .title {
+            width: 90%;
+            margin-left: 5%;
+        }
+        .cen {
+            width: 90%;
+            margin-left: 5%;
+        }
+        div.cenbox {
+            width: 90%;
+            margin-left: 5%;
+        }
+        div.head2 {
+            margin-left: 5%;
+        }
+        .list {
+            margin-left: 5%;
+        }
+        .quote {
+            width: 90%;
+            margin-left: 5%;
+        }
+        .link1 {
+            margin-left: 5%;
+        }
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        /* Styles for tablet devices */
+        .title {
+            width: 70%;
+            margin-left: 15%;
+        }
+        .cen {
+            width: 70%;
+            margin-left: 15%;
+        }
+        div.cenbox {
+            width: 70%;
+            margin-left: 15%;
+        }
+        div.head2 { 
+            margin-left: 15%;
+        }
+        .list {
+            margin-left: 15%;
+        }
+        .quote {
+            width: 70%;
+            margin-left: 15%;
+        }
+        .link1 {
+            margin-left: 15%;
+        }
+    }
+
+    @media only screen and (min-width: 1025px) {
+        /* Styles for laptop and desktop devices */
+        .title {
+            width: 700px;
+            margin-left: 35%;
+        }
+        .cen {
+            width: 400px;
+            margin-left: 50%;
+        }
+        div.cenbox {
+            width: 200px;
+            margin-left: 35%;
+        }
+        div.head2 {
+            margin-left: 50%;
+        }
+        .list {
+            margin-left: 50%;
+        }
+        .quote {
+            width: 500px;
+            margin-left: 50%;
+        }
+        .link1 {
+            margin-left: 42%;
+        }
+    }
+</style>
+<body>
+    <div class="title">
+        <h3> Site title</h3>
+        <p>fixed 1-column layout (basic)</p>
+    </div>
+    <div class="cen">
+        Center column
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cum asperiores quidem tempore est delectus similique voluptatum perspiciatis,
+            <br>
+            ut molestias doloribus architecto odio corrupti autem, unde repellendus dolorum iste optio!
+        </p>
+    </div>
+    <div class="cenbox">
+        fauxleftColumn
+        <br>
+        <a href="#" class="linki">Link Item</a>
+        <br>
+        <a href="#" class="linki">Link Item</a>
+        <br>
+        <a href="#" class="linki">Link Item</a>
+        <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dolores, enim quas dolor provident exercitationem officia iste
+    </div>
+    <div class="head2">
+        <h2>
+            Header 2
+        </h2>
+        <a href="#" class="linki">Link Item</a>
+    </div>
+    <div class="list">
+        <ul>
+            <li>Link Item</li>
+            <li>Link Item</li>
+            <li>Link Item</li>
+            <ul>
+                <li>Link Item</li>
+                <li>Link Item</li>
+            </ul>
+        </ul>
+    </div>
+    <div class="quote">
+        blockquote
+        <p>I think that I shall never see a billboard lovely as a tree. Perhaps, unless the billboards fall, I'll never see a tree at all.</p>
+        <p>
+            “Everything you can imagine is real.”―Pablo Picasso
+        </p>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div class="link1">
+        <a href="#" class="linki"> Link Item  ;</a>
+        <a href="#" class="linki"> CSS</a>
+        <a href="#" class="linki"> WCAG</a>
+        <a href="#" class="linki"> THE CSS TINDERBOX</a>
+    </div>
+</body>
+</html>

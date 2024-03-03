@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">w
+    <head>
+        <meta charset="UTF-16   ">
+        <style>     
+            #logo{
+                border: 1px solid red;
+                border-right-color: purple;
+            }
+            #link{
+               border: 1px solid blue;
+               width: 350px;
+            }
+            .box{
+                border: 3px solid orange;
+                border-spacing: ;
+                box-sizing: border-box;
+                height: 40px;
+                width:  463px ;
+                text-align: center;
+            }
+            .lbox{
+                border: 0.7px solid;
+            }
+            .dotted{
+                border: 1px dotted red;
+            }
+            .min{
+                width: 50px;
+                border: 3px solid purple;
+            }
+
+                        div.outer{
+                width: 300px;
+                height:80px;
+                position: relative;
+                border: 1px solid purple;
+                background-color: white;
+            }
+
+            div.inner1{
+                /*  */
+                width: 100px;
+                height: 35px;
+                position: relative;
+                top: 25%;   
+                left:5%;
+                
+                /* transform: translate(-50%, -50%); */
+                border: 2px dotted red;
+                background-color: white;
+            }
+            div.inner2{
+                width: 100px;
+                height: 35px;
+                position: relative;
+                top: 25%;   
+                right: 10%;
+                border: 2px dotted red;
+                background-color: white;
+            }
+            div.inner5{
+                border: 2px dotted red;
+                background-color: white;
+                width: 85px;
+                height: 35px;
+                position: relative;
+                top: 25%;   
+                left:2%;
+            }
+            div.inner6{
+                border: 2px dotted red;
+                background-color: white;
+                width: 85px;
+                height: 35px;
+                position: absolute;
+                top: 25%;   
+                right: 35%;
+            }
+            div.inner7{
+                border: 2px dotted red;
+                background-color: white;
+                width: 85px;
+                height: 35px;
+                position: absolute;
+                top: 25%;   
+                right: 2%;
+            }
+        </style>
+        <title>Document</title>
+    </head>
+    <body style="align-content: center;">
+        <table
+            class="table"
+            border="1"
+            cellpadding="10"
+            cellspacing="0"
+        >
+            <tr>
+                <td id="logo">Logo Here</td>
+                <td id="link">
+                    <a href="#">Home</a>
+                    &nbsp;&nbsp;
+                    <a href="#">About</a>
+                    &nbsp;&nbsp;
+                    <a href="#">Contact</a>
+                </td>
+            </tr>
+            <table class="box" cellspacing="5" cellpadding="4">
+                <tr>
+                    <td class="lbox">RESULT</td>
+                    <td rowspan="3">
+                        <div class="outer">
+                            <div class="inner1" style="float: left;"></div>
+                            <div class="inner2" style="float: right;"></div>
+                        </div>
+                    </td>
+                        <tr>
+                            <td class="lbox">APPLY</td>
+                        </tr>
+                        <tr>
+                            <td class="lbox">PLACEMENT</td>
+                        </tr>
+                        <tr>
+                            <td class="lbox">RECRUTMENT</td>
+                            <td rowspan="3">
+                                <div class="outer">
+                                    <div class="inner5" style="float: left;"></div>
+                                    <div class="inner6" style="float: center;"></div>
+                                    <div class="inner7" style="float: right;"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lbox">NEWS</td>
+
+                        </tr>
+                    </table>
+                </table>
+            </body>
+        </html>

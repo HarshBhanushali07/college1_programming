@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="108\0px, w3-hide-small=1.0">
+        <title>audio</title>
+    </head>
+    <style>
+        body{
+            align:"center";
+        }
+        .animated-object {
+            align-items: center;
+            width: 500px;
+            height: 450px;
+            background-color: blue;
+            position: relative;
+            animation-name: example;
+            animation-duration: 40s;
+            animation-iteration-count: infinite;}
+       @keyframes example {
+        background-attachment: autoplay;
+        0%   {background-color: red;}
+        25%  {background-color: yellow;}
+        50%  {background-color: blue;}
+        100% {background-color: green;}
+        
+}
+      
+
+        body{
+            animation: example;
+            animation-duration: 26s;
+        }
+    </style>
+    <body class="animated-object">
+        <audio src="drive-breakbeat-173062.mp3" controls type="audio/mpeg" autoplay class="animated-object">
+            
+        </audio>
+        <video src=""></video>
+    </body>
+</html>

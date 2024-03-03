@@ -1,0 +1,30 @@
+.cal{
+    height: 350px;
+    width: 350px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.month{
+    color: white;
+    font-size: 25px;
+    background-color: palevioletred;
+    letter-spacing: 2px;
+
+}
+.day{
+
+    color: red;
+    background-color: lightgrey;
+}
+.date {
+    color: black;
+    background-color: lightgreen;
+}
+.fg{
+    background-color: palevioletred;
+}
+.sun{
+    background-color: lightgoldenrodyellow;
+}

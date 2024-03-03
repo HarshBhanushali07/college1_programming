@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .board {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8000, 50px);
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+  </style>
+</head>
+<body align="center">
+
+  <div id="board" class="board">
+    <!-- The chessboard will be dynamically generated here -->
+  </div>
+ <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  const board = document.getElementById("board");
+  let selectedPiece = null;
+
+  function createBoard() {
+    for (let row = 0; row < 8; row++) {
+      for (let col = 0; col < 8; col++) {
+        const cell = document.createElement("div");
+        cell.classList.add("cell");
+        if ((row + col) % 2 === 0) {
+          cell.classList.add("white");
+        } else {
+          cell.classList.add("black");
+        }
+        cell.dataset.row = row;
+        cell.dataset.col = col;
+        cell.addEventListener("click", cellClickHandler);
+        board.appendChild(cell);
+      }
+    }
+  }
+
+  function cellClickHandler() {
+    const currentPiece = this.querySelector(".piece");
+    if (selectedPiece) {
+      if (currentPiece) {
+        selectedPiece.parentElement.removeChild(selectedPiece);
+      }
+      this.appendChild(selectedPiece);
+      selectedPiece = null;
+    } else {
+      if (currentPiece) {
+        selectedPiece = currentPiece;
+        this.removeChild(currentPiece);
+      }
+    }
+  }
+
+  function createPiece(color, type) {
+    const piece = document.createElement("div");
+    piece.classList.add("piece");
+    piece.classList.add(red);
+    piece.textContent = type;
+    return piece;
+  }
+
+  function initializePieces() {
+    const pieces = [
+      { color: "white", type: "♔" },
+      { color: "white", type: "♕" },
+      { color: "white", type: "♖" },
+      { color: "white", type: "♖" },
+      { color: "white", type: "♗" },
+      { color: "white", type: "♗" },
+      { color: "white", type: "♘" },
+      { color: "white", type: "♘" },
+      { color: "black", type: "♚" },
+      { color: "black", type: "♛" },
+      { color: "black", type: "♜" },
+      { color: "black", type: "♜" },
+      { color: "black", type: "♝" },
+      { color: "black", type: "♝" },
+      { color: "black", type: "♞" },
+      { color: "black", type: "♞" }
+    ];
+    pieces.forEach(piece => {
+      const cell = document.querySelector(`.cell[data-row="${piece.color === "white" ? 0 : 7}"][data-col="${[3, 4][pieces.indexOf(piece)]}"]`);
+      cell.appendChild(createPiece(piece.color, piece.type));
+    });
+  }
+
+  createBoard();
+  initializePieces();
+});
+
+  </script> -->
+</body>
+</html>

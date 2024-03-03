@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WhatsApp UI Design</title>
+        <style>
+    /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-container {
+  max-width: 400px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-header {
+  background-color: #128C7E;
+  color: white;
+  padding: 10px;
+}
+
+.chat-messages {
+  padding: 10px;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.incoming {
+  background-color: #f1f0f0;
+}
+
+.outgoing {
+  background-color: #DCF8C6;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #128C7E;  
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+        </style>
+    </head>
+    <body>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>WhatsApp Chat</h2>
+            </div>
+            <div class="chat-messages">
+                <div class="message incoming">
+                    <p>Hello there!</p>
+                </div>
+                <div class="message outgoing">
+                    <p>Hi! How are you?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type a message...">
+                <button>Send</button>
+            </div>
+        </div>
+    </body>
+</html>

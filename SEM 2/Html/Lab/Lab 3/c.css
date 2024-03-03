@@ -1,0 +1,88 @@
+a {
+  color: rgb(205, 11, 11);
+}
+.ulinkbox {
+  margin-left: 60%;
+}
+.title {
+  background-color: rgba(128, 128, 128, 0.259);
+  height: 200px;
+  width: 800px;
+  margin-left: 610px;
+}
+.titlel {
+  padding: 10px;
+  word-spacing: 10px;
+}
+.tlinks {
+  font-size: large;
+}
+.st {
+  margin-top: -2%;
+  padding-left: 35px;
+}
+.cencolumn {
+  /* margin-top: ;*/
+  /* margin: 2%; */
+  margin-left: 33%;
+}
+.cellsout {
+}
+.hr1 {
+  color: rgb(128, 128, 128);
+  width: 820px;
+  margin-left: 600px;
+}
+.hr2 {
+    color: rgb(128, 128, 128);
+    width: 900px;
+    margin-left: 570px;
+  }
+.cells {
+  height: 240px;
+  width: 250px;
+  background-color: lightgrey;
+  padding-left: 10px;
+  padding-top: 1px;
+}
+.cell_1{
+    margin-left:610px;
+}
+.cell_2{
+    margin-left: 890px;
+    margin-top: -12.5%;
+}
+.cell_3{
+    margin-left: 118vh;
+    margin-top: -12.6%;
+}
+.txtincell{
+    line-height: 2px;
+
+}
+.boxes{
+    height: 170px;
+    width: 200px;
+    background-color: lightgray;
+    padding-top: 1px;
+}
+.box1{
+    margin-left:600px;
+   
+}
+.box2{
+    margin-left: 830px;
+    margin-top: -8.9%;
+}
+.box3{
+    margin-left: 1055px;
+    margin-top: -8.9%;
+}
+.box4{
+    margin-left: 1280px;
+    margin-top: -8.9%;
+}
+.footer{
+    text-align: center;
+    margin-left: 200px;
+}
